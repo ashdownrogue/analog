@@ -3,7 +3,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy HTML file and nginx config
-COPY index.html .
+COPY src/index.html .
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Debug: create a test file and list directory contents
