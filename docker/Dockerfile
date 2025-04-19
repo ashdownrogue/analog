@@ -4,6 +4,8 @@ WORKDIR /usr/share/nginx/html
 
 # Copy HTML file and nginx config
 COPY src/index.html .
+COPY /src/js/main.js ./js/
+COPY /src/css/style.css ./css/
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 
 # Debug: create a test file and list directory contents
